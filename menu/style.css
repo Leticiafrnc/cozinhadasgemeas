@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Poppins',sans-serif;
+}
+.menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.heading{
+    background-color: #F4D3CC;
+    color: #000;
+    margin-bottom: 30px;
+    padding: 120px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 0 20px;
+    
+}
+.food-items img{
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+   
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.price{
+    text-align: right;
+}
+.details>p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.details>button{
+    background-color: #F4D3CC;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    position: relative;
+    left: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+button:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+button a {
+    text-decoration: none;
+    color: #000;
+}
+.food-items img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+footer{
+    background-color: #F4D3CC;
+    color: #000;
+    padding: 8px 0 10px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 10px;
+}
+footer i{
+    padding: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .details>button{
+        position: relative;
+        left: 70px;
+        
+    }
+}
